@@ -584,9 +584,9 @@ ul.social-list li:nth-child(3) a:hover {
 /***************
  Responsive Tab Starts
  ************/
- #services-02 {
+#services-02 {
   background: #f4f4f4;
-     margin-top: 90px;
+  margin-top: 90px;
 }
 
 #services-tabs ul {
@@ -598,12 +598,12 @@ ul.social-list li:nth-child(3) a:hover {
 }
 
 #services-tabs ul li a {
-   font-family: "Roboto Condensed", sans-serif; ;
+  font-family: "Roboto Condensed", sans-serif;
+  ;
   font-size: 14px;
   color: #212226;
   text-transform: uppercase;
-  font-weight: bold
-  padding: 0;
+  font-weight: bold padding: 0;
   text-decoration: none;
 }
 
@@ -652,7 +652,7 @@ ul.social-list li:nth-child(3) a:hover {
 }
 
 .btn-general {
-  font-family:'Roboto Condensed', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   border-radius: 28px;
   font-size: 13px;
   text-transform: uppercase;
@@ -679,4 +679,83 @@ ul.social-list li:nth-child(3) a:hover {
   color: #212226;
   border: 1px solid #fff;
   background-color: #fff;
-} 
+}
+
+.works .filtering .filter {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 29px 15px;
+  border-radius: 30px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.works .filtering span {
+  margin: 0px 5px;
+  padding: 8px 20px;
+  font-size: 14px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.works .filtering .active {
+  color: white;
+  background-color: #fb527a;
+}
+
+.works .item-img {
+  position: relative;
+  margin-top: 30px;
+
+}
+
+.works .item-img:hover .item-img-overlay {
+  visibility: visible;
+  opacity: 1;
+}
+
+.works .item-img-overlay {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.95);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+
+.works .item-img-overlay .icon {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  border-radius: 50%;
+  border: 1px solid #fb527a;
+  text-align: center;
+  font-size: 20px;
+  color: #fb527a;
+}
+
+.works .item-img-overlay h6 {
+  color: #fb527a;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.works .item-img-overlay p {
+  color: #fb527a;
+  margin-top: 400;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.row.no-gutters [class*=col-] {
+  padding: 0;
+  margin-top: -30px;
+  margin-right: -0.2px;
+}
