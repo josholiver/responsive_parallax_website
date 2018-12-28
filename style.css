@@ -28,6 +28,7 @@ body {
   color: #ffffff;
   font-weight: 600;
 }
+
 .mobile-app-banner p {
   font-size: 18px;
   color: #ffffff;
@@ -51,11 +52,13 @@ body {
   border: 1px solid transparent;
   border-image: 4px;
 }
+
 .buttons .btn {
   padding: 18px 40px;
   margin-bottom: 20px;
   margin-right: 13px;
 }
+
 .btn-pink,
 .btn-blue {
   background-color: #fb527a;
@@ -77,6 +80,7 @@ body {
 .feature-text h4 {
   margin: 40px 0px;
 }
+
 .feature-text:hover {
   border-top: 6px solid #fb527a;
   padding-top: 45px;
@@ -147,6 +151,7 @@ body {
   padding-top: 75px;
   padding-bottom: 5px;
 }
+
 .overlay {
   position: absolute;
   top: 0%;
@@ -162,7 +167,8 @@ body {
 }
 
 .overlay-image {
-  position: relative; /*margin from the document */
+  position: relative;
+  /*margin from the document */
   text-align: center;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
 }
@@ -237,10 +243,12 @@ button.mfp-close {
   font-size: 42px;
   margin: 0;
 }
+
 .about-item h3 {
   font-size: 24px;
   margin-bottom: 10px;
 }
+
 .about-item hr {
   width: 45px;
   height: 3px;
@@ -248,6 +256,7 @@ button.mfp-close {
   margin: 0 auto;
   border: none;
 }
+
 .about-item p {
   margin-top: 30px;
   text-align: center;
@@ -286,6 +295,7 @@ button.mfp-close {
   margin: 8px;
   position: relative;
 }
+
 .team-member-overlay {
   background: rgba(33, 34, 38, 0.9);
   position: absolute;
@@ -431,3 +441,242 @@ ul.social-list li:nth-child(3) a:hover {
   color: #fb527a;
   font-size: 17px;
 }
+
+/***************
+    Feature Area
+ ************/
+
+.section-title {
+  text-align: center;
+  position: relative;
+  z-index: 11;
+  padding-bottom: 50px;
+  margin-top: 60px;
+}
+
+.section-title .title {
+  text-transform: uppercase;
+  line-height: 25px;
+}
+
+.section-title .title-separator {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feature-box {
+  display: flex;
+}
+
+.feature-box .icon {
+  position: relative;
+  border: 1px solid #eff2f7;
+  border-radius: 50%;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.35s ease;
+
+
+}
+
+
+
+.feature-box .icon:before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: #eff2f7;
+  border: 1px solid #eff2f7;
+  z-index: -1;
+  transition: all 0.35s ease;
+  width: 88px;
+  height: 88px;
+  top: 10px;
+
+}
+
+
+
+.feature-box .icon {
+  width: 110px;
+  height: 110px;
+  padding: 10px;
+  margin-bottom: 50px;
+  font-size: 32px;
+
+
+}
+
+.feature-box .content h6 {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: -30px;
+
+}
+
+.feature-box h6:after {
+  content: "";
+  display: block;
+  margin: 20px auto;
+  height: 4px;
+  width: 25px;
+
+}
+
+.feature-box.icon-left .content {
+  margin-left: 38px;
+}
+
+.left {
+  margin-top: -527px;
+}
+
+.feature-box.icon-left .icon,
+.feature-box.icon-right .icon {
+  font-size: 24px;
+  padding: 5px;
+  min-width: 78px;
+  height: 78px;
+  background-color: #eff2f7;
+
+}
+
+
+.feature-box.icon-left .icon:before,
+.feature-box.icon-right .icon:before {
+  width: 66px;
+  height: 66px;
+  top: 5px;
+  left: 5px;
+  border-color: #ddddde;
+  background: #ffffff;
+
+}
+
+.feature-box.icon-left .content,
+.feature-box.icon-right .content {
+  margin-top: 15px;
+
+}
+
+.feature-box.icon-left .icon,
+.feature-box.icon-right .icon {
+  margin-top: 35px;
+
+}
+
+.feature-box.icon-left .content .subtitle,
+.feature-box.icon-right .content .subtitle {
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.feature-box:hover .icon {
+  color: white;
+}
+
+.feature-box:hover .icon:before {
+  background-color: #fb527a;
+}
+
+/***************
+ Responsive Tab Starts
+ ************/
+ #services-02 {
+  background: #f4f4f4;
+     margin-top: 90px;
+}
+
+#services-tabs ul {
+  margin-bottom: 40px;
+}
+
+#services-tabs ul li {
+  padding: 5px 30px;
+}
+
+#services-tabs ul li a {
+   font-family: "Roboto Condensed", sans-serif; ;
+  font-size: 14px;
+  color: #212226;
+  text-transform: uppercase;
+  font-weight: bold
+  padding: 0;
+  text-decoration: none;
+}
+
+
+/* Tab active state */
+
+#services-tabs ul li.r-tabs-state-active a {
+  color: #fb527a;
+  font-weight: 700;
+  border-bottom: 3px solid #fb527a;
+  padding-bottom: 5px;
+  -webkit-transition: border-color 300ms linear;
+  transition: border-color 300ms linear;
+}
+
+.service-tab .col-md-6 {
+  padding: 0;
+}
+
+.service-tab img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.service-tab .tab-bg {
+  background: #fff;
+  padding: 59px 30px;
+  min-height: 481px;
+}
+
+.service-tab h2 {
+  font-size: 48px;
+  color: #bbb;
+  margin-bottom: 20px;
+  font-weight: 100;
+}
+
+.service-tab h3 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.service-tab p {
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+
+.btn-general {
+  font-family:'Roboto Condensed', sans-serif;
+  border-radius: 28px;
+  font-size: 13px;
+  text-transform: uppercase;
+  margin: 0 6px;
+  padding: 12px 46px 12px 46px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.btn-yellow {
+  color: #fff;
+  border: 1px solid #fb527a;
+  background-color: #fb527a;
+}
+
+.btn-yellow:hover,
+.btn-yellow:focus {
+  color: #fff;
+  background-color: #212226;
+  border: 1px solid #212226;
+}
+
+.btn-white {
+  color: #212226;
+  border: 1px solid #fff;
+  background-color: #fff;
+} 

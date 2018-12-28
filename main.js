@@ -1,11 +1,11 @@
-jQuery(document).ready(function() {
+jQuery(document).ready(function () {
   $('#videolink').magnificPopup({
     type: 'inline',
     midClick: true
   });
 });
 
-$(function() {
+$(function () {
   $('#team-members').owlCarousel({
     items: 2,
     autoplay: true,
@@ -25,12 +25,11 @@ $(function() {
   });
 });
 
-$(function() {
+$(function () {
   $('#progress-elements').waypoint(
-    function() {
-      $('.progress-bar').each(function() {
-        $(this).animate(
-          {
+    function () {
+      $('.progress-bar').each(function () {
+        $(this).animate({
             width: $(this).attr('aria-valuenow') + '%'
           },
           2000
@@ -38,9 +37,14 @@ $(function() {
       });
 
       this.destroy();
-    },
-    {
+    }, {
       offset: 'bottom-in-view'
     }
   );
+});
+
+$(function () {
+  $("#services-tabs").responsiveTabs({
+    animation: 'slide'
+  });
 });
