@@ -1020,3 +1020,28 @@ ul {
   font-size: 60px;
   margin-bottom: 20px;
 }
+
+
+/***************
+  Clients
+ ************/
+
+#clients .horizontal-heading {
+  margin-bottom: 30px;
+  margin-top: 90px;
+}
+
+#client-list {
+  padding: 45px 0 0 0;
+}
+
+.client {
+  padding: 0 10px;
+  max-width: 170px;
+  margin: 0 auto;
+  line-height: 100px;
+}
+
+.client img {
+  display: inline-block !important;
+}

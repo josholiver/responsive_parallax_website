@@ -95,3 +95,28 @@ $(document).ready(function () {
     time: 4000
   });
 });
+
+
+$(function () {
+  $("#clients-list").owlCarousel({
+    items: 6,
+    autoplay: false,
+    smartSpeed: 700,
+    loop: true,
+    autoplayHoverPause: true,
+    nav: false,
+    dots: false,
+
+    responsive: {
+      0: {
+        items: 2
+      },
+      480: {
+        items: 3
+      },
+      768: {
+        items: 6
+      }
+    }
+  });
+});
