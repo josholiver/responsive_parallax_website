@@ -859,3 +859,164 @@ ul.social-list li:nth-child(3) a:hover {
 .owl-theme .owl-controls {
   margin-top: 40px;
 }
+
+/***************
+ Pricing Tables
+ ************/
+
+.price .item {
+  padding: 50px 15px;
+  background-color: white;
+  box-shadow: 0px 15px 40px -5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  border: 2px solid #f4f4f4;
+}
+
+.price .type h4 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.price .value {
+  margin-bottom: 30px;
+}
+
+.price .value h3 {
+  font-size: 50px;
+  display: inline-block;
+  position: relative;
+  font-weight: bold;
+}
+
+.price .value h3 span {
+  font-size: 12px;
+  position: absolute;
+  top: 0;
+  left: -10px;
+}
+
+.price .features {
+  margin-bottom: 30px;
+
+}
+
+.price .features li {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 12px;
+}
+
+.price .features li:last-child {
+  margin-bottom: 0;
+}
+
+.price .active {
+
+  background-color: #fb527a;
+
+  color: #fff;
+}
+
+.price .active .features li {
+  color: #eee;
+}
+
+.price .active .butn span {
+  color: #fb527a;
+}
+
+.price .butn {
+  padding: 10px 30px;
+}
+
+.price .butn span {
+  font-size: 12px;
+}
+
+.price .butn {
+  padding: 10px 30px;
+}
+
+.butn-bg {
+  background: #fb527a;
+  border-color: #fb527a;
+  color: #fff;
+}
+
+.butn {
+  padding: 12px 35px;
+  background: #fff;
+  border-radius: 30px;
+  border: 1px solid transparent;
+  position: relative;
+  z-index: 3;
+  margin-left: 10px;
+  margin-right: 10px;
+  -webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  cursor: pointer;
+  outline: none !important;
+  overflow: hidden;
+}
+
+.price .butn {
+  padding: 10px 30px;
+}
+
+.butn-bg {
+  background: #fb527a;
+  border-color: #fb527a;
+  color: #fff;
+}
+
+.butn-bg:hover {
+  color: white;
+  text-decoration: none;
+
+
+}
+
+ul {
+  list-style: none;
+}
+
+.order a:hover {
+  text-decoration: none;
+}
+
+.numbers {
+  background-image: url(img/new.jpeg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
+.numbers .color-fff {
+  color: white;
+}
+
+.numbers .fs-35 {
+  font-size: 68px;
+}
+
+.numbers .fw-700 {
+  font-weight: 700;
+}
+
+.numbers .color-aaa {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.numbers .fa {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
