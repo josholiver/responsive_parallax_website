@@ -1,11 +1,11 @@
-jQuery(document).ready(function () {
+jQuery(document).ready(function() {
   $('#videolink').magnificPopup({
     type: 'inline',
     midClick: true
   });
 });
 
-$(function () {
+$(function() {
   $('#team-members').owlCarousel({
     items: 2,
     autoplay: true,
@@ -25,11 +25,12 @@ $(function () {
   });
 });
 
-$(function () {
+$(function() {
   $('#progress-elements').waypoint(
-    function () {
-      $('.progress-bar').each(function () {
-        $(this).animate({
+    function() {
+      $('.progress-bar').each(function() {
+        $(this).animate(
+          {
             width: $(this).attr('aria-valuenow') + '%'
           },
           2000
@@ -37,14 +38,15 @@ $(function () {
       });
 
       this.destroy();
-    }, {
+    },
+    {
       offset: 'bottom-in-view'
     }
   );
 });
 
-$(function () {
-  $("#services-tabs").responsiveTabs({
+$(function() {
+  $('#services-tabs').responsiveTabs({
     animation: 'slide'
   });
 
@@ -65,22 +67,29 @@ $(function () {
   });
 
   // filter items on button click
-  $('.filtering').on('click', 'span', function () {
-
+  $('.filtering').on('click', 'span', function() {
     var filterValue = $(this).attr('data-filter');
 
     $gallery.isotope({
       filter: filterValue
     });
-
   });
 
-  $('.filtering').on('click', 'span', function () {
-
-    $(this).addClass('active').siblings().removeClass('active');
-
+  $('.filtering').on('click', 'span', function() {
+    $(this)
+      .addClass('active')
+      .siblings()
+      .removeClass('active');
   });
+});
 
-
-
+$(document).ready(function() {
+  $('#testimonial-slider').owlCarousel({
+    items: 1,
+    itemsDesktop: [1000, 1],
+    itemsDesktopSmall: [979, 1],
+    itemsTablet: [768, 1],
+    pagination: true,
+    autoplay: false
+  });
 });
