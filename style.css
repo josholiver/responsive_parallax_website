@@ -1367,7 +1367,55 @@ ul {
   border-color: #000;
 }
 
-a.button.border, a.button, .button{
-  color: #11cfe7;
-  border: 1px solid #fb527a;
-}
+
+/***************
+  Maps
+ ************/
+
+ #map{
+   width: 100%;
+   height: 550px;
+ }
+
+ footer{
+   background: #222;
+   padding: 80px 0px;
+   
+ }
+
+ footer .social .fa{
+  color: white;
+  border-radius: 50px;
+  margin: 15px 5px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  border: 2px solid white;
+  transition: all 0.5s ease-in;
+ }
+
+ footer .social .fa:hover{
+   background: #fb527a;
+
+ }
+
+ footer p{
+   color: #999999;
+   font-weight: 400;
+   font-size: 15px;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+ }
+
+ footer .logo{
+   color: white;
+   font-size: 30px;
+   font-weight: 500;
+   text-transform: uppercase;
+ }
+
+ .logo:hover{
+   color: #fb527a;
+   text-decoration: none;
+ }
