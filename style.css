@@ -1177,15 +1177,17 @@ ul {
 /***************
   Contacts
  ************/
- .contact {
+.contact {
   position: relative;
   padding-bottom: 100px;
 }
-.contact .section-heading{
+
+.contact .section-heading {
   margin-bottom: 70px;
   color: white;
   font-weight: bold;
 }
+
 .contact .part-top {
   position: relative;
   background-attachment: fixed;
@@ -1198,12 +1200,14 @@ ul {
   z-index: 2;
   margin-top: -150px;
 }
-.part-top{
-  background-image:url(img/contact.jpg);
+
+.part-top {
+  background-image: url(img/contact.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
 .contact .contact-form {
   position: relative;
   height: 100%;
@@ -1233,10 +1237,13 @@ ul {
   padding: 50px 30px;
   height: 100%;
 }
-.contact .box-info > p, .contact-form > p{
+
+.contact .box-info>p,
+.contact-form>p {
   margin-bottom: 30px;
   font-size: 15px;
 }
+
 .contact .box-info h4 {
   color: #fff;
   font-size: 23px;
@@ -1250,7 +1257,7 @@ ul {
 
 .contact .box-info .item {
   position: relative;
-  display: -webkit-box;    
+  display: -webkit-box;
   display: flex;
 }
 
@@ -1268,11 +1275,13 @@ ul {
   font-weight: 400;
   line-height: 1.7;
 }
-.contact .box-info .item h5 span{
+
+.contact .box-info .item h5 span {
   display: block;
   font-weight: bold;
   margin-bottom: 7px;
 }
+
 .contact .box-info .item h5 a {
   color: inherit;
 }
@@ -1323,11 +1332,11 @@ ul {
   border-color: #4477ab;
 }
 
-.contact .box-info{
+.contact .box-info {
   background-color: #fb527a;
 }
 
-.form-control{
+.form-control {
   display: block;
   border: 1px solid #ddd;
   width: 100%;
@@ -1347,12 +1356,12 @@ ul {
 }
 
 
-.form-control:focus{
+.form-control:focus {
   outline: 0;
   box-shadow: none;
 }
 
-#contact-form .button{
+#contact-form .button {
   background-color: #fb527a;
   padding: 10px 30px;
   border-radius: 50px;
@@ -1362,7 +1371,8 @@ ul {
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-#contact-form .button:hover, #contact-from .button{
+#contact-form .button:hover,
+#contact-from .button {
   background-color: #000;
   border-color: #000;
 }
@@ -1372,18 +1382,18 @@ ul {
   Maps
  ************/
 
- #map{
-   width: 100%;
-   height: 550px;
- }
+#map {
+  width: 100%;
+  height: 550px;
+}
 
- footer{
-   background: #222;
-   padding: 80px 0px;
-   
- }
+footer {
+  background: #222;
+  padding: 80px 0px;
 
- footer .social .fa{
+}
+
+footer .social .fa {
   color: white;
   border-radius: 50px;
   margin: 15px 5px;
@@ -1393,29 +1403,222 @@ ul {
   font-size: 20px;
   border: 2px solid white;
   transition: all 0.5s ease-in;
- }
+}
 
- footer .social .fa:hover{
-   background: #fb527a;
+footer .social .fa:hover {
+  background: #fb527a;
 
- }
+}
 
- footer p{
-   color: #999999;
-   font-weight: 400;
-   font-size: 15px;
-   text-transform: uppercase;
-   letter-spacing: 2px;
- }
+footer p {
+  color: #999999;
+  font-weight: 400;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
 
- footer .logo{
-   color: white;
-   font-size: 30px;
-   font-weight: 500;
-   text-transform: uppercase;
- }
+footer .logo {
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
 
- .logo:hover{
-   color: #fb527a;
-   text-decoration: none;
- }
+.logo:hover {
+  color: #fb527a;
+  text-decoration: none;
+}
+
+
+/**********
+  HEADER
+ *****/
+
+.pogo {
+  color: white;
+  font-size: 30px;
+
+}
+
+.pogo:hover {
+  text-decoration: none;
+  font-size: #fb527a;
+
+}
+
+.main_header {
+  position: fixed;
+  top: 0px;
+  max-height: 70px;
+  z-index: 999;
+  width: 100%;
+  padding-top: 17px;
+  background: none;
+  overflow: hidden;
+  transition: all 0.3s;
+  opacity: 0;
+  top: -100px;
+  padding-bottom: 6px;
+  font-family: "Oswald", sans-serif;
+}
+
+@media only screen and (max-width: 766px) {
+  .main_header {
+    padding-top: 25px;
+  }
+}
+
+.open-nav {
+  max-height: 400px !important;
+}
+
+.open-nav .mobile-toggle {
+  transform: rotate(-90deg);
+}
+
+.sticky {
+  background-color: #ffffff;
+  opacity: 1;
+  top: 0px;
+  border-bottom: 1px solid silver;
+}
+
+.logo {
+  width: 50px;
+  font-size: 25px;
+  color: #8f8f8f;
+  text-transform: uppercase;
+  float: left;
+  display: block;
+  margin-top: 0;
+  line-height: 1;
+  margin-bottom: 10px;
+  font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+@media only screen and (max-width: 766px) {
+  .logo {
+    float: none;
+  }
+}
+
+nav {
+  float: right;
+  width: 65%;
+}
+
+@media only screen and (max-width: 766px) {
+  nav {
+    width: 100%;
+  }
+}
+
+nav ul {
+  list-style: none;
+  overflow: hidden;
+  text-align: right;
+  float: right;
+}
+
+
+@media only screen and (max-width: 766px) {
+  nav ul {
+    padding-top: 10px;
+    margin-bottom: 22px;
+    float: left;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 14px;
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 766px) {
+  nav ul li {
+    width: 100%;
+    padding: 7px 0;
+    margin: 0;
+  }
+}
+
+nav ul a {
+  color: #888888;
+  text-transform: uppercase;
+  font-size: 14px;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  transition: all 500ms linear;
+  font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+nav ul a.active {
+  border-top: 1px solid gray;
+  transition: all 500ms 100ms linear;
+
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  text-decoration: none;
+  color: #fb527a;
+}
+
+.mobile-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  right: 22px;
+  top: 22px;
+  width: 30px;
+  transition: all 200ms ease-in;
+}
+
+@media only screen and (max-width: 766px) {
+  .mobile-toggle {
+    display: block;
+  }
+}
+
+.mobile-toggle span {
+  width: 30px;
+  height: 4px;
+  margin-bottom: 6px;
+  border-radius: 1000px;
+  background: #8f8f8f;
+  display: block;
+}
+
+
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+.scrollup {
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 40px;
+  text-align: center;
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  display: none;
+  bottom: 50px;
+  right: 100px;
+}
